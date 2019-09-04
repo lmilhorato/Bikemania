@@ -1,3 +1,6 @@
+const session = require('express-session');
+const bodyParser = require('body-parser');
+require('dotenv').config()
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -11,12 +14,17 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 // view engine setup
+app.use(cookieParser());
+app.use(session({
+  secret: 'some-private-cpe-key',
+  key: 'cpe'
+}));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
