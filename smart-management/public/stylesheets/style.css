@@ -7027,4 +7027,14 @@ body {
 a {
   color: #00B7FF; }
 
+.texto-centro {
+  text-align: center; }
+
+.box {
+  width: 30%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  margin-top: 8%; }
+
 /*# sourceMappingURL=style.css.map */
