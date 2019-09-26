@@ -7045,4 +7045,14 @@ a {
   border-radius: 50px;
   border: 10px; }
 
+.botaobike {
+  font: "Swis721 LtEx BT";
+  color: "black";
+  background-color: #FF6501;
+  width: 100px;
+  height: 90px;
+  outline-color: #FF6501;
+  border-radius: 30px;
+  border: 10px; }
+
 /*# sourceMappingURL=style.css.map */
