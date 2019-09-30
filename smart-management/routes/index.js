@@ -22,7 +22,7 @@ res.redirect('/login')
 
 });
 router.get('/acompanhamento', function(req, res, next) {
-  res.render('acompanhamento', { title: 'Acompanhamento' });
+  res.render('acompanhamento', { title: 'Acompanhamento',layout: 'layout' });
 });
 
 

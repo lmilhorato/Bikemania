@@ -7055,4 +7055,12 @@ a {
   border-radius: 30px;
   border: 10px; }
 
+#logobike {
+  background-image: url("/images/bikelogo.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin-top: -77px;
+  background-color: white !important; }
+
 /*# sourceMappingURL=style.css.map */
