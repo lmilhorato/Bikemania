@@ -7039,10 +7039,80 @@ a {
 .botaoenviar {
   font: "Swis721 LtEx BT";
   color: "black";
+  background-color: #FF6501;
+  width: 30%;
+  outline-color: #FF6501;
+  border-radius: 50px;
+  border: 10px; }
+
+#botaobike {
+  font: "Swis721 LtEx BT";
+  color: "black";
+  background-color: #FF6501;
+  width: 100px;
+  height: 90px;
+  outline-color: #FF6501;
+  border-radius: 30px;
+  border: 10px; }
+
+#logobike {
+  background-image: url("/images/bikelogo.png") !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin-top: -77px;
+  background-color: white !important; }
+
+.btncadastrar {
+  font: "Swis721 LtEx BT";
+  color: "black";
   background-color: #3CB1FE;
   width: 30%;
   outline-color: #FF6501;
   border-radius: 50px;
   border: 10px; }
+  @media (max-width: 992px) {
+    .btncadastrar {
+      width: 100px; } }
+
+.btnunidade {
+  font: "Swis721 LtEx BT";
+  color: "black";
+  background-color: #FF6501;
+  width: 100px;
+  outline-color: #FF6501;
+  border-radius: 25px;
+  border: 10px;
+  height: 100px; }
+
+.Address-btn {
+  margin: 0px;
+  margin-top: 10%;
+  display: flex; }
+
+.btntest {
+  margin: 0px;
+  margin-right: 39px;
+  width: 80%; }
+
+.btnrelatorio1 {
+  font: "Swis721 LtEx BT";
+  color: "black";
+  background-color: #3CB1FE;
+  width: 30%;
+  outline-color: #FF6501;
+  border-radius: 50px;
+  border: 10px;
+  justify-content: flex-start; }
+
+.btnrelatorio2 {
+  font: "Swis721 LtEx BT";
+  color: "black";
+  background-color: #3CB1FE;
+  width: 30%;
+  outline-color: #FF6501;
+  border-radius: 50px;
+  border: 10px;
+  justify-content: flex-end; }
 
 /*# sourceMappingURL=style.css.map */
