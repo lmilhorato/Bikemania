@@ -20,9 +20,13 @@ res.redirect('/login')
   res.redirect('/error')
 })
 
-
-
-
 });
+router.get('/acompanhamento', function(req, res, next) {
+  res.render('acompanhamento', { title: 'Acompanhamento',layout: 'layout' });
+});
+
+
+
+
 
 module.exports = router;
