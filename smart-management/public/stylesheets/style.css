@@ -7055,7 +7055,20 @@ a {
   outline-color: #FF6501;
   border-radius: 30px;
   border: 10px;
-  margin-left: 25px; }
+  margin-left: 30px; }
+
+.novocliente {
+  font-family: "Swis721 LtEx BT";
+  font-size: 18px;
+  color: "black";
+  background-color: #3CB1FE;
+  width: 150px;
+  height: 30px;
+  outline-color: #3CB1FE;
+  border-radius: 30px;
+  border: 10px;
+  margin-left: 1010px;
+  padding-top: -500px; }
 
 #logobike {
   background-image: url("/images/bikelogo.png") !important;
@@ -7063,6 +7076,12 @@ a {
   background-position: center;
   height: 200px;
   margin-top: -77px;
+  font-family: "Swis721 LtEx BT";
   background-color: white !important; }
+
+.unidade {
+  font-family: "Swis721 LtEx BT";
+  font-size: 18px;
+  color: "black"; }
 
 /*# sourceMappingURL=style.css.map */

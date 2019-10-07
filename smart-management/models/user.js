@@ -7,7 +7,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     enum:['Master','Funcionario']
   },
-  uid:String
+  uid: {
+    type: String,
+    unique: true
+  }
 
 }, { timestamps: true, static: false });
 
