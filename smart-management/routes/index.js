@@ -18,7 +18,7 @@ router.post('/login', function(req, res, next) {
   firebase.auth().signInWithEmailAndPassword(user.username, user.password).then((userF)=>{
     mongo.getByUid(userF.user.uid).then((result)=> {
       if(result.type=='Master'){
-        res.redirect('/signup');
+        res.redirect('/acompmaster');
       }
       else{
         res.redirect('/acompanhamento');
@@ -37,8 +37,9 @@ router.post('/login', function(req, res, next) {
 router.get('/acompanhamento', function(req, res, next) {
   res.render('acompanhamento', { title: 'Acompanhamento',layout: 'layout' });
 });
-
-
+router.get('/acompmaster', function(req, res, next) {
+  res.render('acompmaster', { title: 'Acompanhamento' });
+});
 
 
 
