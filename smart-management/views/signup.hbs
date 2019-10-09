@@ -1,27 +1,79 @@
-<form action="/signup" method="post">
-  <div class="form-group">
-      <label for="exampleInputEmail1">Nome Completo</label>
-      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome com espaço" name="user[name]"  >
-</div>
-  <div class="form-group">
-      <label for="exampleInputEmail1">Endereço </label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Logradouro e número " name="user[address]">
-  </div>
-  <div class="form-group">
-      <label for="exampleInputEmail1">CPF</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="XXXXXXXXXXX" name="user[CPF]">
-  </div>
-  <div class="form-group">
-      <label for="exampleInputEmail1">RG</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="RG sem caracteres especiais" name="user[RG]">
-  </div>
-  <div class="form-group">
-      <label for="exampleInputEmail1">Endereço de e-mail</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" e-mail" name="user[E-,a]">
-  </div>
-  <div class="form-group">
-      <label for="exampleInputEmail1">Telefone</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="(xx) xxxxx-xxxx" name="user[email]">
-  </div>
-  <button type="submit" class="btn btn-primary">Cadastrar</button>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+        <div class="sidebar-header text-center">
+          <a class="navbar-brand" href="/">
+            <img src="/images/bikelogo.png" >
+          </a>
+        </div>
+      </nav>
+    <br>
+      <div class="texto-centro">
+        <FONT size="6" face="Segoe UI Symbol" color="#3CB1FE" >
+      Novo Cliente
+      </FONT>
+      </div>
+      <div class="box">
+        <form action="/cadastro" method="post">
+          <div class="cadastro">
+            <div class="texto-centro">
+              <label for="InputEmail1" ><FONT size="5" face="Swis721 LtEx BT" color="black" > Nome</FONT></label>
+            </div>
+            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Nome com espaço" name="client[name]"  >
+          <div class="cadastro">
+            <div class="texto-centro">
+              <label for="InputEmail1" ><FONT size="5" face="Swis721 LtEx BT" color="black" > Endereço</FONT></label>
+            </div>
+            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Logradouro e número " name="client[address]">
+        </div>
+        <div class="cadastro">
+          <div class="texto-centro">
+            <label for="InputEmail1" ><FONT size="5" face="Swis721 LtEx BT" color="black" > CPF</FONT></label>
+          </div>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="XXXXXXXXXXX" name="client[CPF]">
+       </div>
+         <div class="cadastro">
+           <div class="texto-centro">
+             <label for="InputEmail1" ><FONT size="5" face="Swis721 LtEx BT" color="black" > RG</FONT></label>
+           </div>
+         <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="RG sem caracteres especiais" name="client[RG]">
+      </div>
+        <div class="cadastro">
+          <div class="texto-centro">
+            <label for="InputEmail1" ><FONT size="5" face="Swis721 LtEx BT" color="black" > Endereço de email</FONT></label>
+          </div>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="client[email]">
+       </div>
+         <div class="cadastro">
+           <div class="texto-centro">
+             <label for="InputEmail1" ><FONT size="5" face="Swis721 LtEx BT" color="black" > Telefone </FONT></label>
+           </div>
+           <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="(xx) xxxxx-xxxx" name="client[phone]">
+       </div>
+<<<<<<< Updated upstream
+       <br>
+          <div class="texto-centro">
+            <button type="submit" class="btncadastrar">Cadastrar</button>
+=======
+
+          <div class="texto-centro">
+            <button type="submit" class="botaoenviar">Cadastrar</button>
+>>>>>>> Stashed changes
+
+          </div>
+        </form>
+      </div>
+
+
+  </body>
+</html>

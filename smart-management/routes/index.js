@@ -4,7 +4,10 @@ var firebase = require('firebase');
 const mongo = require('../models/user');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/home', function(req, res, next) {
+  res.render('home', { title: 'Home' });
+});
+router.get('/signup', function(req, res, next) {
   res.render('signup', { title: 'Cadastro' });
 });
 router.get('/login', function(req, res, next) {
