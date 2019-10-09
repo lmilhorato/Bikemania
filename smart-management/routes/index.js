@@ -18,7 +18,7 @@ router.post('/login', function(req, res, next) {
   firebase.auth().signInWithEmailAndPassword(user.username, user.password).then((userF)=>{
     mongo.getByUid(userF.user.uid).then((result)=> {
       if(result.type=='Master'){
-        res.redirect('/');
+        res.redirect('/signup');
       }
       else{
         res.redirect('/acompanhamento');

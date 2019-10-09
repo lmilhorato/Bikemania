@@ -7039,7 +7039,7 @@ a {
 .botaoenviar {
   font: "Swis721 LtEx BT";
   color: "black";
-  background-color: #3CB1FE;
+  background-color: #FF6501;
   width: 30%;
   outline-color: #FF6501;
   border-radius: 50px;
@@ -7085,6 +7085,9 @@ a {
   border: 10px;
   height: 100px; }
 
+.home-title {
+  color: #FF6501; }
+
 .Address-btn {
   margin: 0px;
   margin-top: 10%;
@@ -7103,7 +7106,8 @@ a {
   outline-color: #FF6501;
   border-radius: 50px;
   border: 10px;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin-top: 10%; }
 
 .btnrelatorio2 {
   font: "Swis721 LtEx BT";
@@ -7113,7 +7117,9 @@ a {
   outline-color: #FF6501;
   border-radius: 50px;
   border: 10px;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-left: 38%;
+  margin-top: 10%; }
 
 .botaobike {
   font-family: "Swis721 LtEx BT";
@@ -7152,6 +7158,7 @@ a {
 .unidade {
   font-family: "Swis721 LtEx BT";
   font-size: 18px;
-  color: "black"; }
+  color: "black";
+  justify-content: flex-end; }
 
 /*# sourceMappingURL=style.css.map */
