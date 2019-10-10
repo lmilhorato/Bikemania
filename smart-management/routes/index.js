@@ -13,6 +13,9 @@ router.get('/signup', function(req, res, next) {
 router.get('/login', function(req, res, next) {
   res.render('index', { title: 'Login' });
 });
+router.get('/novoaluguel', function(req, res, next) {
+  res.render('novoaluguel', { title: 'Novo Aluguel' });
+});
 router.post('/login', function(req, res, next) {
   const user=req.body.user;
   firebase.auth().signInWithEmailAndPassword(user.username, user.password).then((userF)=>{
