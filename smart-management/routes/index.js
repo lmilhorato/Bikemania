@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var firebase = require('firebase');
 const mongo = require('../models/user');
+const Client = require('../models/client');
 
 /* GET home page. */
 router.get('/home', function(req, res, next) {
@@ -10,6 +11,21 @@ router.get('/home', function(req, res, next) {
 router.get('/signup', function(req, res, next) {
   res.render('signup', { title: 'Cadastro' });
 });
+/*POST signup*/
+router.post('/signup',(req,res) => {
+  const  client  = req.body.client;
+    Client.create(client).then((client_id) => {
+      console.log("entrou");
+      console.log(client_id);
+      console.log(client);
+      res.redirect(`/`);
+    }).catch((error) => {
+      console.log(error);
+      res.redirect('error');
+    });
+
+});
+
 router.get('/login', function(req, res, next) {
   res.render('index', { title: 'Login' });
 });
