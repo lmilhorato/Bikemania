@@ -29,14 +29,28 @@ router.post('/signup',(req,res) => {
 router.get('/login', function(req, res, next) {
   res.render('index', { title: 'Login' });
 });
+router.get('/novoaluguel', function(req, res, next) {
+  res.render('novoaluguel', { title: 'Novo Aluguel' });
+});
+router.post('/novoaluguel', function(req, res, next) {
+  if(tipo==1){
+      res.redirect('/acompmaster');
+}
+  else{
+    res.redirect('/acompanhamento')
+  }
+});
+var tipo;
 router.post('/login', function(req, res, next) {
   const user=req.body.user;
   firebase.auth().signInWithEmailAndPassword(user.username, user.password).then((userF)=>{
     mongo.getByUid(userF.user.uid).then((result)=> {
       if(result.type=='Master'){
+      tipo=1;
         res.redirect('/acompmaster');
       }
       else{
+        tipo=0;
         res.redirect('/acompanhamento');
       }
     }).catch((error)=>{
