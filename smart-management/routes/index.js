@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var firebase = require('firebase');
 const mongo = require('../models/user');
+const auth = require('./middleware/auth');
 const Client = require('../models/client');
 
 /* GET home page. */
@@ -67,7 +68,7 @@ router.post('/login', function(req, res, next) {
   });
 
 
-router.get('/acompanhamento', function(req, res, next) {
+router.get('/acompanhamento', auth.isAuthenticated, function(req, res, next) {
   res.render('acompanhamento', { title: 'Acompanhamento Matriz',layout: 'layout' });
 });
 router.get('/acompmaster', function(req, res, next) {
