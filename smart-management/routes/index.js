@@ -18,7 +18,7 @@ router.post('/signup',(req,res) => {
       console.log("entrou");
       console.log(client_id);
       console.log(client);
-      res.redirect(`/`);
+      res.redirect(`/novoaluguel`);
     }).catch((error) => {
       console.log(error);
       res.redirect('error');

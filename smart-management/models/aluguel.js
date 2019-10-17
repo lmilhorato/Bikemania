@@ -1,19 +1,19 @@
 const mongoose = require('mongoose');
 
-const clientSchema = new mongoose.Schema({
+const aluguelSchema = new mongoose.Schema({
 
-  name: String,
-  address: String,
+  horario_retirada: Time,
+  equipamento: String,
+  horario_chegada: Hour,
   cpf: Number,
-  rg: Number,
-  email: String,
-  phone: Number,
+  nome: String,
+  acessorio: Number, //tem ou nao tem
 
 
 }, { timestamps: true, static: false });
-const ClientModel = mongoose.model('Client', clientSchema);
+const AluguelModel = mongoose.model('Aluguel', clientSchema);
 
-class Client {
+class Aluguel {
   /**
    * Get all Users from database
    * @returns {Array} Array of Users
@@ -92,4 +92,4 @@ class Client {
 
 
   }
-  module.exports = Client;
+  module.exports = Aluguel;
