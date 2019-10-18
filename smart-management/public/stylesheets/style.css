@@ -7070,7 +7070,8 @@ a {
   width: 30%;
   outline-color: #FF6501;
   border-radius: 50px;
-  border: 10px; }
+  border: 10px;
+  margin-bottom: 20px; }
   @media (max-width: 992px) {
     .btncadastrar {
       width: 100px; } }
